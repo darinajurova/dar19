@@ -1,0 +1,300 @@
+* {
+    font-family: sans-serif;
+    color: darkslategrey;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.user-profile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid rgba(172, 170, 170, 0.363);
+    box-shadow: 3px 0 3px gainsboro;
+    position:fixed;
+    background-color: white;
+}
+
+.h-menu {
+    margin-left: 30px;
+}
+
+.li-user {
+    color: white;
+    background-color:rgb(207, 7, 107);
+}
+
+.p-user {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+    padding-left: 15px;
+}
+
+.img-menu {
+    display: block;
+    width:25px;
+}
+
+.p-menu {
+    margin-left: 15px;
+}
+
+hr {
+    border: none;
+    color: rgba(192, 188, 188, 0.658);
+    background-color: rgba(192, 188, 188, 0.658);
+    height: 1px;
+}
+
+.main {
+    width: 82vw;
+    height: 100vh;
+    padding-left: 18vw;
+    background-color: ghostwhite;
+}
+
+.profile {
+    display: flex;
+}
+
+.account {
+    margin-top: 20px;
+    width: 60%;
+    border: 1px solid rgba(220, 220, 220, 0.808);
+    box-shadow: 3px 3px 3px gainsboro;
+    background-color: white;
+    padding: 10px;
+}
+
+.edit {
+    border: 1px solid rgba(220, 220, 220, 0.808);
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    background-color:rgb(207, 7, 107);
+    width: 97%;
+}
+
+.p-edit {
+    color: white;
+    padding-left: 15px;
+}
+
+.p1 {
+    font-size: 14px;
+}
+
+form {
+    margin-left: 30px;
+    width: 100%;
+}
+
+.box, .block, .container {
+    display: flex;
+}
+
+.block1 {
+    display: block;
+    width: 45%;
+    margin-top: 20px;
+}
+
+.name {
+    display: block;
+    width: 95%;
+}
+
+.second-block {
+    margin-left: 10px;
+}
+
+.div-address{
+    margin-top: 20px;
+}
+
+.address {
+    display: block;
+    width: 89.5%;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.container {
+    margin-top: 20px;
+    width: 97%;
+}
+
+.cont2 {
+    margin-left: 30px;
+}
+
+.cont3 {
+    margin-left: 30px;
+}
+
+textarea {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.about-me {
+    display: block;
+    margin-top: 20px;
+}
+
+.ceo {
+    width: 30%;
+    height: 100%;
+    margin: 20px;
+    border: 1px solid rgba(220, 220, 220, 0.808);
+    box-shadow: 3px 3px 3px gainsboro;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.marc {
+    width: 35%;
+    border-radius: 50%;
+    border: 1px solid rgba(220, 220, 220, 0.808);
+    box-shadow: 3px 3px 3px gainsboro;
+    position: relative;
+    bottom: 50px;
+}
+
+.p-ceo {
+    margin-top: 0;
+}
+
+button {
+    background-color:rgb(207, 7, 107);
+    color: white;
+    padding: 10px 50px;
+    border: 1px solid rgba(220, 220, 220, 0.808);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 425px;
+}
+
+.info {
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    color: darkslategrey;
+}
+
+.p-footer {
+    margin-left: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.hr-footer {
+    position: absolute;
+    bottom: 40px;
+    left: 15vw;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        width: 20%;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two";
+    }
+
+    .ceo {
+        grid-area: one;
+    }
+
+    .account {
+        grid-area: two;
+        position: relative;
+        top: 70px;
+    }
+
+    .account, .ceo {
+        width: 85%;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .main {
+        height: 100%;
+        margin-left: 6vw;
+    }
+
+    .hr-footer {
+        bottom: 40px;
+        left: 20vw;
+        width: 100%;
+    }
+
+    footer {
+        margin-right: 80px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .h2-user::before {
+        content: url(img/menu.png);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .h2-user {
+        display: flex;
+        align-items: center;
+    }
+
+    .hr-footer {
+        left: 0;
+    }
+}
